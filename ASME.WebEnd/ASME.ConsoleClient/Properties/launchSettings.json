@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ASME.ConsoleClient": {
+      "commandName": "Project",
+      "commandLineArgs": "RUN -u \"http://asme.stepanyan.co.uk:5080/\""
+    }
+  }
+}
