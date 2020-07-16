@@ -1,0 +1,27 @@
+
+{
+    "region" : "eu-west-2",
+    "profile" : "root",
+    "configuration" : "Release",
+    "tag"           : "asme-webend:2.0",
+    "docker-build-working-dir" : "",
+    "cluster"                  : "asme-webend",
+    "launch-type"              : "FARGATE",
+    "launch-subnets"           : "subnet-a9f3c1d2,subnet-9c1b56d1,subnet-c26bbeab",
+    "launch-security-groups"   : "sg-ffd94297",
+    "assign-public-ip"         : true,
+    "task-definition-name"     : "ASMEWebEnd",
+    "task-cpu"                 : "256",
+    "task-memory"              : "512",
+    "task-definition-task-role" : "arn:aws:iam::354969788835:role/ecs_execution_ASMEWebEnd-0",
+    "task-execution-role"       : "ecsTaskExecutionRole",
+    "container-name"            : "ASMEWebEnd",
+    "container-port-mapping"    : "5080:5080",
+    "container-environment-variables" : "\"ASPNETCORE_ENVIRONMENT\"=\"Production\";\"ASPNETCORE_URLS\"=\"http://0.0.0.0:5080\"",
+    "skip-image-push"                 : false,
+    "cluster-service"                 : "ASMEWebEnd",
+    "desired-count"                   : 1,
+    "deployment-minimum-healthy-percent" : 50,
+    "deployment-maximum-percent"         : 200,
+    "vstoolkit-deployment-mode"          : "DeployService"
+}
